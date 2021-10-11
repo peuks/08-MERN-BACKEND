@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/bin/node /usr/sbin/yarn install
+
+PATH: 
+  ./bin:./node_modules/.bin:/home/skuep/.pyenv/bin:/home/skuep/.rbenv/shims:/home/skuep/.symfony/bin:/home/skuep/.rbenv/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/local/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.1.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/skuep/code/08-MERN-BACKEND/server/package.json: Unexpected token } in JSON at position 400
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "devDependencies": {},
+    "scripts": {
+      "start": "nodemon index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "mongoose": "^5.12.10",
+      "nodemon": "^2.0.7"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
